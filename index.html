@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin Panel</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700;900&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./css/metisMenu.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+
+<body>
+  <!-- sidebar menu start -->
+  <div class="page-container">
+    <div class="sidebar-menu">
+      <div class="sidebar-header">
+        <div class="logo">
+          <a href="#">Tour <span>Intell</span></a>
+        </div>
+      </div>
+      <div class="sidebar_header">
+        <div class="header-text">
+          <a href="#"><i class="fa-solid fa-house-chimney"></i>Dashboard</a>
+        </div>
+        <div class="dashboard-count">6</div>
+      </div>
+
+      <div class="main-menu">
+        <div class="menu-inner">
+          <nav>
+            <ul class="metismenu" id="menu">
+              <li class="management">Management</li>
+              <li>
+                <a href="#" aria-expanded="true"><i class="fa-solid fa-chart-line"></i><span>Analytics </span>
+                </a>
+                <ul class="collapse">
+                  <li><a href="#"> Menu Item</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" aria-expanded="true"><i class="fa-solid fa-user-group"></i><span>Customers</span></a>
+              </li>
+              <li>
+                <a href="#" aria-expanded="true"><i class="fa-solid fa-cart-shopping"></i><span>Orders</span></a>
+              </li>
+              <li>
+                <a href="#" aria-expanded="true"><i class="fa fa-align-left"></i><span>Products</span></a>
+              </li>
+              <li>
+                <a href="#" aria-expanded="true"><i class="fa-solid fa-receipt"></i><span>Invoice</span></a>
+              </li>
+              <li class="management Pages">Pages</li>
+              <li>
+                <a href="#" aria-expanded="true"><i class="fa-solid fa-lock"></i><span>Authontications </span>
+                </a>
+                <ul class="collapse">
+                  <li><a href="#"> Menu Item</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" aria-expanded="true"><i class="fa-solid fa-calendar-days"></i><span>Calender</span></a>
+              </li>
+              <li class="management Components">Components</li>
+              <li>
+                <a href="#" aria-expanded="true"><i class="fa-solid fa-chart-simple"></i><span>Charts </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-expanded="true"><i class="fa-brands fa-uikit"></i><span>UI Elements</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- sidebar menu End -->
+
+    <!-- header area start -->
+    <div class="main-content">
+      <div class="header-area">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-sm-4 clearfix">
+            <div class="nav-btn pull-left">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-8 clearfix">
+            <ul class="notification-area" style="text-align: right">
+              <li><i class="fa-solid fa-bell"></i></li>
+              <li class="settings-btn"><i class="fa-solid fa-gear"></i></li>
+              <li><i class="fa-solid fa-flag-usa"></i></li>
+              <li class="user-logo"><img src="./img/03.jpg" alt="" /></li>
+              <li><a href="#"> Kate Doe</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- header area end -->
+
+      <!-- main content area start -->
+      <div class="main-content-inner">
+        <div class="row pb-3 pt-3">
+          <div class="col-md-2 col-sm-2">
+            <h4>Overview</h4>
+          </div>
+          <div class="col-md-10 col-sm-10">
+            <form action="#">
+              <div class="flex-row d-flex justify-content-end">
+                <div class="col-lg-6 col-11 px-1">
+                  <div class="input-daterange">
+                    <div class="start">
+                      <input type="text" id="start" class="form-control shadow-none text-left mr-2"
+                        placeholder="MM/DD/YYYY" />
+                      <span class="fa fa-calendar" id="fa-1"></span>
+                    </div>
+                    <div class="end">
+                      <input type="text" id="end" class="form-control shadow-none text-left ml-2"
+                        placeholder="MM/DD/YYYY" />
+                      <span class="fa fa-calendar" id="fa-2"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Dashboard Card Start -->
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-3">
+            <div class="dashboard_card">
+              <h6>Total Profits</h6>
+              <strong>$95,595</strong>
+              <span>+ 3.55%</span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="dashboard_card">
+              <h6>Total Users</h6>
+              <strong>$95,595</strong>
+              <span>+ 3.55%</span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="dashboard_card">
+              <h6>New Users</h6>
+              <strong>1,984</strong>
+              <span class="user-minus"> - 9.89%</span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="dashboard_card">
+              <h6>Total Memberships</h6>
+              <strong>95,595</strong>
+              <span>+ 3.55%</span>
+            </div>
+          </div>
+        </div>
+        <!-- Dashboard Card End -->
+
+        <!-- Chart Start -->
+        <div class="row pt-5" data-aos="fade-up">
+          <div class="col-md-8">
+            <div class="chart">
+              <span>Membership Reports</span>
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="chart activeuser">
+                <span>Active Users</span>
+                <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Chart End -->
+
+        <!-- Recent User table Start -->
+        <div class="row pt-5" data-aos="fade-up">
+          <div class="col-md-8">
+            <div class="recentUser">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="header-title">Recent users</h4>
+                  <div class="single-table">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead class="text-uppercase">
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">User</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Date</th>
+                          </tr>
+                        </thead>
+                        <tbody class="user-data">
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>
+                              <span><img src="./img/03.jpg" alt="" /></span>
+                              Mark
+                            </td>
+                            <td class="membership">Membership</td>
+                            <td>01 Jun 2022 12:00 PM</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>
+                              <span><img src="./img/03.jpg" alt="" /></span>
+                              SoHaG
+                            </td>
+                            <td class="pending">Pending</td>
+                            <td>02 Jun 2022 12:00 PM</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>
+                              <span><img src="./img/03.jpg" alt="" /></span>
+                              Eklas
+                            </td>
+                            <td class="pending">Pending</td>
+                            <td>02 Jun 2022 12:00 PM</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>
+                              <span><img src="./img/03.jpg" alt="" /></span>
+                              Jane Doe
+                            </td>
+                            <td class="cancelled">Cancelled</td>
+                            <td>02 Jun 2022 12:00 PM</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="seel_all">
+                        <button>See All</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+  <script src="./js/chart.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/jquery.slimscroll.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./js/metisMenu.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

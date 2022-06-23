@@ -1,0 +1,237 @@
+@media (min-width: 1200px) and (max-width: 1364px) {
+  .sidebar-menu {
+    width: 365px;
+  }
+  .nav-btn {
+    position: fixed;
+    z-index: 99;
+    left: 363px;
+    background: #303641;
+    padding: 14px;
+    top: 0;
+    margin: 0;
+  }
+  .nav-btn span {
+    background: #fffbfb;
+  }
+  .sbar_collapsed .sidebar-menu {
+    left: -90%;
+  }
+  .sbar_collapsed .nav-btn {
+    position: initial;
+    background: none;
+    padding: 0;
+    margin: 10px 30px 0 0;
+  }
+  .sbar_collapsed .nav-btn span {
+    background: #b3aaaa;
+  }
+  .sbar_collapsed .logo a span {
+    display: block;
+  }
+  .minisidebar.main-menu {
+    margin-right: 0;
+  }
+
+  .main-content-inner {
+    padding: 0 15px 50px;
+  }
+  .page-container,
+  .sbar_collapsed.page-container {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sidebar-menu {
+    width: 306px;
+  }
+  .nav-btn {
+    position: fixed;
+    z-index: 99;
+    left: 304px;
+    background: #303641;
+    padding: 14px;
+    top: 0;
+    margin: 0;
+  }
+  .nav-btn span {
+    background: #fffbfb;
+  }
+  .sbar_collapsed .sidebar-menu {
+    left: -90%;
+  }
+  .sbar_collapsed .nav-btn {
+    position: initial;
+    background: none;
+    padding: 0;
+    margin: 10px 30px 0 0;
+  }
+  .sbar_collapsed .nav-btn span {
+    background: #b3aaaa;
+  }
+  .sbar_collapsed .logo a span {
+    display: block;
+  }
+  .minisidebar.main-menu {
+    margin-right: 0;
+  }
+
+  .main-content-inner {
+    padding: 0 15px 50px;
+  }
+  .page-container,
+  .sbar_collapsed.page-container {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar-menu {
+    width: 306px;
+  }
+  .nav-btn {
+    position: fixed;
+    z-index: 99;
+    left: 304px;
+    background: #303641;
+    padding: 14px;
+    top: 0;
+    margin: 0;
+  }
+  .nav-btn span {
+    background: #fffbfb;
+  }
+  .sbar_collapsed .sidebar-menu {
+    left: -90%;
+  }
+  .sbar_collapsed .nav-btn {
+    position: initial;
+    background: none;
+    padding: 0;
+    margin: 10px 30px 0 0;
+  }
+  .sbar_collapsed .nav-btn span {
+    background: #b3aaaa;
+  }
+  .sbar_collapsed .logo a span {
+    display: block;
+  }
+  .minisidebar.main-menu {
+    margin-right: 0;
+  }
+  .sbar_collapsed .metismenu li a span,
+  .sbar_collapsed .metismenu li a:after,
+  .sbar_collapsed .metismenu .collapse.in {
+    display: inline-block;
+  }
+
+  .main-content-inner {
+    padding: 0 15px 50px;
+  }
+  .page-container,
+  .sbar_collapsed.page-container {
+    padding-left: 0;
+  }
+
+  .search-box input {
+    width: 278px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ptb--100 {
+    padding: 90px 0;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .sidebar-menu {
+    width: 365px;
+  }
+  .nav-btn {
+    position: fixed;
+    z-index: 99;
+    left: 363px;
+    background: #303641;
+    padding: 14px;
+    top: 0;
+    margin: 0;
+  }
+  .nav-btn span {
+    background: #fffbfb;
+  }
+  .sbar_collapsed .sidebar-menu {
+    left: -90%;
+  }
+  .sbar_collapsed .nav-btn {
+    position: initial;
+    background: none;
+    padding: 0;
+    margin: 10px 30px 0 0;
+  }
+  .sbar_collapsed .nav-btn span {
+    background: #b3aaaa;
+  }
+  .sbar_collapsed .logo a span {
+    display: block;
+  }
+  .minisidebar.main-menu {
+    margin-right: 0;
+  }
+
+  .main-content-inner {
+    padding: 0 15px 35px;
+  }
+  .page-container,
+  .sbar_collapsed.page-container {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 240px) and (max-width: 479px) {
+  .sidebar-menu {
+    width: calc(100% - 48px);
+  }
+  .nav-btn {
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    background: #303641;
+    padding: 14px;
+    top: 0;
+    margin: 0;
+  }
+  .nav-btn span {
+    background: #fffbfb;
+  }
+  .sbar_collapsed .sidebar-menu {
+    left: -100%;
+  }
+  .sbar_collapsed .nav-btn {
+    position: initial;
+    background: none;
+    padding: 0;
+    margin: 10px 30px 0 0;
+  }
+  .sbar_collapsed .nav-btn span {
+    background: #b3aaaa;
+  }
+  .sbar_collapsed .logo a span {
+    display: block;
+  }
+  .minisidebar.main-menu {
+    margin-right: 0;
+  }
+
+  .main-content-inner {
+    padding: 0 15px 50px;
+  }
+  .page-container,
+  .sbar_collapsed.page-container {
+    padding-left: 0;
+  }
+  .card-body {
+    padding: 1.25rem;
+  }
+}
