@@ -28,12 +28,10 @@
           <a href="#">Tour <span>Intell</span></a>
         </div>
       </div>
-      <div class="sidebar_header">
-        <div class="header-text">
+      <div class="header-text">
           <a href="#"><i class="fa-solid fa-house-chimney"></i>Dashboard</a>
-        </div>
-        <div class="dashboard-count">6</div>
       </div>
+    
 
       <div class="main-menu">
         <div class="menu-inner">
@@ -115,53 +113,34 @@
           <div class="col-md-2 col-sm-2">
             <h4>Overview</h4>
           </div>
-          <div class="col-md-10 col-sm-10">
-            <form action="#">
-              <div class="flex-row d-flex justify-content-end">
-                <div class="col-lg-6 col-11 px-1">
-                  <div class="input-daterange">
-                    <div class="start">
-                      <input type="text" id="start" class="form-control shadow-none text-left mr-2"
-                        placeholder="MM/DD/YYYY" />
-                      <span class="fa fa-calendar" id="fa-1"></span>
-                    </div>
-                    <div class="end">
-                      <input type="text" id="end" class="form-control shadow-none text-left ml-2"
-                        placeholder="MM/DD/YYYY" />
-                      <span class="fa fa-calendar" id="fa-2"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
+          <div class="col-md-10 col-sm-10">  </div>
         </div>
 
         <!-- Dashboard Card Start -->
         <div class="row" data-aos="fade-up">
           <div class="col-md-3">
-            <div class="dashboard_card">
+            <div class="dashboard_card shadow">
               <h6>Total Profits</h6>
               <strong>$95,595</strong>
               <span>+ 3.55%</span>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="dashboard_card">
+            <div class="dashboard_card shadow">
               <h6>Total Users</h6>
               <strong>$95,595</strong>
               <span>+ 3.55%</span>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="dashboard_card">
+            <div class="dashboard_card shadow">
               <h6>New Users</h6>
               <strong>1,984</strong>
-              <span class="user-minus"> - 9.89%</span>
+              <span class="text-danger"> - 9.89%</span>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="dashboard_card">
+            <div class="dashboard_card shadow">
               <h6>Total Memberships</h6>
               <strong>95,595</strong>
               <span>+ 3.55%</span>
@@ -173,18 +152,18 @@
         <!-- Chart Start -->
         <div class="row pt-5" data-aos="fade-up">
           <div class="col-md-8">
-            <div class="chart">
+            <div class="chart shadow">
               <span>Membership Reports</span>
               <canvas id="myChart"></canvas>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
-              <div class="chart activeuser">
+            
+              <div class="chart activeuser shadow">
                 <span>Active Users</span>
-                <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
+                <canvas  id="chart-bars" class="chart-canvas" height="170"></canvas>
               </div>
-            </div>
+            
           </div>
         </div>
         <!-- Chart End -->

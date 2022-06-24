@@ -125,7 +125,7 @@ new Chart(ctxx, {
         borderWidth: 0,
         borderRadius: 4,
         borderSkipped: false,
-        backgroundColor: "rgba(255, 255, 255, .8)",
+        backgroundColor: "rgba(255, 255, 255, 1)",
         data: [50, 20, 10, 22, 50, 10, 40],
         maxBarThickness: 6,
       },
@@ -178,7 +178,7 @@ new Chart(ctxx, {
           color: "rgba(255, 255, 255, .2)",
         },
         ticks: {
-          display: true,
+          display: true,  
           color: "#f8f9fa",
           padding: 10,
           font: {
