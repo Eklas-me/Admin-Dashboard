@@ -27,16 +27,22 @@
   });
 })(jQuery);
 
-// Chart Js
 
+// Animation
+AOS.init({
+  duration: 1000,
+});
+
+
+// Membership Reports Chart
 const ctx = document.getElementById("myChart").getContext("2d");
 let delayed;
-var gradient = ctx.createLinearGradient(0, 0, 0, 400);
+var gradient = ctx.createLinearGradient(0, 0, 0, 50);
 
-gradient.addColorStop(1, "rgba(166,77,65, 0.3)");
-gradient.addColorStop(0, "rgba(255,68,43,1)");
+gradient.addColorStop(1, "rgba(71,101,246, 0.2)");
+gradient.addColorStop(0, "rgba(71,101,246,1)");
 
-const labels = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
+const labels = ["Jun 1", "Jun 2", "Jun 3", "Jun 4", "Jun 5", "Jun 6", "Jun 7"];
 
 const data = {
   labels: labels,
@@ -45,7 +51,7 @@ const data = {
       label: "Incomes",
       fill: true,
       backgroundColor: gradient,
-      borderColor: "rgb(9 31 60)",
+      borderColor: "#4765f6",
       pointBackgroundColor: "#fff",
       tension: 0.4,
       data: [2, 10, 5, 15, 20, 30, 50],
@@ -96,21 +102,9 @@ const config = {
 
 const myChart = new Chart(ctx, config);
 
-//   Datepicker
-$(document).ready(function () {
-  $(".input-daterange").datepicker({
-    format: "dd-mm-yyyy",
-    autoclose: true,
-    calendarWeeks: true,
-    clearBtn: true,
-    disableTouchKeyboard: true,
-  });
-});
 
-// Animation
-AOS.init({
-  duration: 1000,
-});
+
+// Active User Chart
 
 var ctxx = document.getElementById("chart-bars").getContext("2d");
 
@@ -125,7 +119,7 @@ new Chart(ctxx, {
         borderWidth: 0,
         borderRadius: 4,
         borderSkipped: false,
-        backgroundColor: "rgba(255, 255, 255, 1)",
+        backgroundColor: "#4765F6",
         data: [50, 20, 10, 22, 50, 10, 40],
         maxBarThickness: 6,
       },
@@ -151,13 +145,13 @@ new Chart(ctxx, {
           drawOnChartArea: true,
           drawTicks: false,
           borderDash: [5, 5],
-          color: "rgba(255, 255, 255, .2)",
+          color: "#fff",
         },
         ticks: {
           suggestedMin: 0,
           suggestedMax: 500,
           beginAtZero: true,
-          padding: 10,
+          padding: 5,
           font: {
             size: 14,
             weight: 300,
@@ -165,7 +159,7 @@ new Chart(ctxx, {
             style: "normal",
             lineHeight: 2,
           },
-          color: "#fff",
+          color: "rgba(15, 45, 105, 1)",
         },
       },
       x: {
@@ -175,11 +169,11 @@ new Chart(ctxx, {
           drawOnChartArea: true,
           drawTicks: false,
           borderDash: [5, 5],
-          color: "rgba(255, 255, 255, .2)",
+          color: "#fff",
         },
         ticks: {
           display: true,  
-          color: "#f8f9fa",
+          color: "rgba(15, 45, 105, .8)",
           padding: 10,
           font: {
             size: 14,
@@ -193,3 +187,44 @@ new Chart(ctxx, {
     },
   },
 });
+
+
+
+// Active MembarShip Chart
+var ctxxx = document.getElementById("chart-cicle").getContext("2d");
+
+new Chart(ctxxx, {
+  type: "doughnut",
+  data: {
+    labels: ["Active Membarship", "Inactive Membarship"],
+    datasets: [
+      {
+        label: "Users",
+        tension: 0.4,
+        borderWidth: 0,
+        borderSkipped: false,
+        backgroundColor: ["#fff", "#788ef9"],
+        data: [90, 50],
+        maxBarThickness: 5,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    cutout: 50,
+    animation: {  
+      duration: 2000,    
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+    interaction: {
+      intersect: false,
+      mode: "index",
+    },
+  },
+});
+
