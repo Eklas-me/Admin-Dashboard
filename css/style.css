@@ -63,7 +63,6 @@ img {
 .sidebar-header {
   padding: 7px 0px 15px;
   background: #0c2556;
-  /* border-bottom: 1px solid #343e50; */
 }
 .sidebar-menu .logo {
   text-align: center;
@@ -74,7 +73,7 @@ img {
   text-decoration: none;
   font-size: 30px;
   font-weight: 500;
-  color: #4765F6;
+  color: #4765f6;
   font-family: "Pacifico", cursive;
   letter-spacing: 2px;
 }
@@ -93,16 +92,16 @@ img {
 }
 
 .header-text {
-    padding: 6px 22px;
-    background: #0f2d69;
-    margin-top: 5px;
+  padding: 6px 22px;
+  background: #0f2d69;
+  margin-top: 5px;
 }
 li.management {
   padding: 0 25px 10px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   color: #7d838f;
 }
 ul#menu {
@@ -217,9 +216,7 @@ li.management.Components {
 
 .nav-btn span {
   display: block;
-  /* width: 22px; */
-  height: 20px;
-  /* background: rgb(0 0 0); */
+  height: 31px;
   margin: 4px 0;
   border-radius: 15px;
   -webkit-transition: all 0.3s ease 0s;
@@ -277,77 +274,78 @@ li.user-logo img {
 .notification-area li:nth-child(3) {
   color: rgb(192, 170, 170);
 }
-.notification-area li:nth-child(2) {
-  /* margin-left: 10px; */
-}
-ul.notification-area li i:hover {
-  color: #0f2d69;
-}
+
 ul.notification-area {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .user-details img {
   width: 40px;
   border-radius: 50%;
+  transition: 0.5s;
+}
+.user-details img:hover {
+  border: 2px solid red;
+  box-sizing: border-box;
 }
 
 ul.notification-area {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 ul.show-user-details li {
-    display: block;
-    margin-left: 0;
-    padding-left: 12px;
+  display: block;
+  margin-left: 0;
+  padding-left: 12px;
 }
 
 ul.show-user-details {
-    padding-left: 0;
-    background: #0c2556;
-    position: absolute;
-    top: 57px;
-    left: -14px;
-    width: 166px;
-    border-radius: 7px;
-    transition: .5s;
+  padding-left: 0;
+  background: #0c2556;
+  position: absolute;
+  top: 57px;
+  left: -14px;
+  width: 166px;
+  border-radius: 7px;
+  transition: 0.5s;
 }
 
 .user-wrapper {
-    position: relative;
+  position: relative;
 }
 
-
-ul.show-user-details li a i {width: 22px;}
+ul.show-user-details li a i {
+  width: 24px;
+  font-size: 16px;
+}
 
 ul.show-user-details li a {
-    display: inline-block;
-    color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
 }
 ul.show-user-details li:hover {
-    background: #0f2d69;
-    border-radius: 7px;
+  background: #0f2d69;
+  border-radius: 7px;
 }
 
-
-.user-details {}
+.user-details {
+}
 
 .user-details span {
-    color: #000;
-    margin-left: 7px;
-    margin-right: 5px;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 500;
-    font-family: 'Rubik';
+  color: #000;
+  margin-left: 7px;
+  margin-right: 5px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Rubik";
 }
 
 .user-details i {
-    color: #000;
+  color: #000;
 }
-
-
 
 /* header End */
 
@@ -393,24 +391,24 @@ ul.show-user-details li:hover {
   font-family: "Rubik";
 }
 .activMembarship {
-  background: #4765F6;
+  background: #4765f6;
   color: #fff;
   margin: 0 0px;
-  padding: 22px 8px 25px;
+  padding: 15px 8px 16px;
 }
 .members h4 {
   display: inline-block;
-  font-size: 38px;
+  font-size: 27px;
   font-weight: 500;
 }
 .members strong {
   color: rgb(208 214 225);
-  font-size: 16px;
+  font-size: 15px;
 }
 .members p {
   color: rgb(208 214 225);
   font-size: 18px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 .membars-wrapper {
@@ -420,16 +418,14 @@ ul.show-user-details li:hover {
 }
 .overview-total {
   position: relative;
-
-
 }
-.overview-total  .overview-num{
-    font-size: 20px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+.overview-total .overview-num {
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* Chart End */
 
@@ -464,7 +460,6 @@ tbody.user-data td span img {
 }
 .card {
   border-radius: 7px;
-  /* box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; */
 }
 tbody.user-data {
   font-size: 15px;
@@ -490,7 +485,7 @@ h4.header-title {
 }
 
 .seel_all button:hover {
-  background: #4765F6;
+  background: #4765f6;
   color: #fff;
 }
 
@@ -506,20 +501,14 @@ tbody.user-data tr td i {
   font-size: 9px;
   margin-right: 8px;
 }
+tbody.user-data tr td {
+  line-height: 29px;
+}
 
+tbody.user-data tr th {
+  line-height: 34px;
+}
+table.table {
+  border-spacing: 0px;
+}
 /* Recent User End*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

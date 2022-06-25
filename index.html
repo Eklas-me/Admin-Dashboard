@@ -12,8 +12,6 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./css/metisMenu.css" />
   <link rel="stylesheet" href="./css/style.css" />
@@ -88,19 +86,15 @@
     <div class="main-content">
       <div class="header-area sticky-top ">
         <div class="row align-items-center">
-          <div class="col-md-6 col-sm-4 clearfix">
+          <div class="col-md-2 col-sm-2 clearfix">
             <div class="nav-btn pull-left">
               <span><i class="fa-solid fa-bars"></i></span>
 
              
             </div>
           </div>
-          <div class="col-md-6 col-sm-8 clearfix">
+          <div class="col-md-10 col-sm-10 clearfix">
             <ul class="notification-area" >
-              <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
-              <li class="settings-btn"><a href="#"><i class="fa-solid fa-gear"></i></a></li>
-              <li><a href="#"><i class="fa-solid fa-flag-usa"></i></a></li>
-              <li>
                 <div class="user-wrapper" >
                   <div class="user-details" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" >
                     <img src="./img/03.jpg"  alt="User-Profile-Image">
@@ -130,7 +124,7 @@
       <div class="main-content-inner">
         <div class="row pb-3 pt-3">
           <div class="col-md-2 col-sm-2">
-            <h4>Overview</h4>
+            <h4 style="margin-bottom: 0;">Overview</h4>
           </div>
           <div class="col-md-10 col-sm-10"> </div>
         </div>
@@ -171,7 +165,7 @@
         <!-- Chart Start -->
         <div class="row pt-3 " >
           <div class="col-md-8 pb-5" data-aos="fade-up">
-            <div class="chart shadow">
+            <div class="chart shadow chart-container">
               <span>Membership Reports</span>
               <canvas id="myChart"></canvas>
             </div>
@@ -187,7 +181,7 @@
               <div class="membar-left">
                   <div class="overview-total">
                     <span class="overview-num">60%</span>
-                    <canvas id="chart-cicle" class="chart-canvas" width="116" height="116" style="display: block; box-sizing: border-box; height: 128.889px; width: 128.889px;"></canvas>
+                    <canvas id="chart-cicle" class="chart-canvas" width="123" height="121" style="display: block;box-sizing: border-box;height: 121px;width: 123px;"></canvas>
                   </div>
               </div>
               <div class="membar-right">
@@ -200,17 +194,6 @@
               </div>
             </div>
           </div>
-
-         
-           
-             
-
-
-            
-
-
-            
-         
         </div>
         <!-- Chart End -->
 
@@ -223,7 +206,7 @@
                   <h4 class="header-title">Recent users</h4>
                   <div class="single-table">
                     <div class="table-responsive">
-                      <table class="table table-borderless">
+                      <table class="table ">
                         <thead class="text-uppercase">
                           <tr>
                             <th scope="col">ID</th>
@@ -287,10 +270,7 @@
   </div>
 
 
-
-
   <script src="./js/jquery-2.2.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
   <script src="./js/chart.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/jquery.slimscroll.min.js"></script>

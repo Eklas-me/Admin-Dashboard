@@ -66,7 +66,6 @@ const config = {
     radius: 3,
     hitRadius: 30,
     hoverRadius: 8,
-    responsive: true,
     animation: {
       onComplete: () => {
         delayed = true;
