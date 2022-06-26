@@ -125,7 +125,7 @@ new Chart(ctxx, {
     ],
   },
   options: {
-    responsive: true,
+    // responsive: true,
     maintainAspectRatio: false,
     plugins: {
       legend: {
@@ -209,7 +209,7 @@ new Chart(ctxxx, {
     ],
   },
   options: {
-    responsive: true,
+    //  
     maintainAspectRatio: false,
     cutout: 50,
     animation: {  

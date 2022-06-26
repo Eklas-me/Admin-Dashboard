@@ -240,4 +240,7 @@
   .card-body {
     padding: 1.25rem;
   }
+  .recentUser {
+    margin-top: 30px;
+}
 }

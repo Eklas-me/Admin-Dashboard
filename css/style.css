@@ -69,7 +69,6 @@ img {
 }
 .logo a {
   display: inline-block;
-  /* max-width: 120px; */
   text-decoration: none;
   font-size: 30px;
   font-weight: 500;
@@ -278,15 +277,14 @@ li.user-logo img {
 ul.notification-area {
   margin-bottom: 0;
 }
-
+.user-details{
+  cursor: pointer;
+}
 .user-details img {
   width: 40px;
   border-radius: 50%;
-  transition: 0.5s;
-}
-.user-details img:hover {
-  border: 2px solid red;
-  box-sizing: border-box;
+  transition: 1s;
+  cursor: pointer;
 }
 
 ul.notification-area {
@@ -379,11 +377,18 @@ ul.show-user-details li:hover {
 .chart {
   position: relative;
   background: #fff;
-  padding: 40px 10px 12px;
+  padding: 40px 10px 43px;
   border-radius: 7px;
 }
 
 .chart span {
+  position: absolute;
+  top: 18px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Rubik";
+}
+.chart2 span {
   position: absolute;
   top: 18px;
   font-size: 15px;
@@ -409,11 +414,12 @@ ul.show-user-details li:hover {
   color: rgb(208 214 225);
   font-size: 18px;
   font-family: "Roboto";
+  margin-left: 6px;
 }
 
 .membars-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .overview-total {
@@ -425,6 +431,12 @@ ul.show-user-details li:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.chart2 {
+  position: relative;
+  background: #fff;
+  padding: 50px 10px 10px;  
+  border-radius: 7px;
 }
 
 /* Chart End */
@@ -512,3 +524,4 @@ table.table {
   border-spacing: 0px;
 }
 /* Recent User End*/
+
