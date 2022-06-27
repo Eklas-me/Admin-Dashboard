@@ -7,24 +7,7 @@
     $(".page-container").toggleClass("sbar_collapsed");
   });
 
-  // slimscroll activation
-  $("#menu").metisMenu();
 
-  $(".menu-inner").slimScroll({
-    height: "auto",
-  });
-  $(".nofity-list").slimScroll({
-    height: "435px",
-  });
-  $(".timeline-area").slimScroll({
-    height: "500px",
-  });
-  $(".recent-activity").slimScroll({
-    height: "calc(100vh - 114px)",
-  });
-  $(".settings-list").slimScroll({
-    height: "calc(100vh - 158px)",
-  });
 })(jQuery);
 
 
@@ -226,4 +209,29 @@ new Chart(ctxxx, {
     },
   },
 });
+
+
+
+
+// Table Data search filters
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("table_format");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+
 

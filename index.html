@@ -12,8 +12,12 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css"
+    integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="./css/metisMenu.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/responsive.css" />
 </head>
@@ -28,7 +32,7 @@
         </div>
       </div>
       <div class="header-text">
-        <a href="#"><i class="fa-solid fa-house-chimney"></i>Dashboard</a>
+        <a href="#"><i class="bi bi-house-door"></i>Dashboard</a>
       </div>
       <div class="main-menu">
         <div class="menu-inner">
@@ -36,42 +40,45 @@
             <ul class="metismenu" id="menu">
               <li class="management">Management</li>
               <li>
-                <a href="#" aria-expanded="true"><i class="fa-solid fa-chart-line"></i><span>Analytics </span>
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#analytics" aria-controls="analytics"
+                  aria-expanded="true"><i class="bi bi-graph-up"></i><span>Analytics </span>
                 </a>
-                <ul class="collapse">
+
+                <ul class="collapse" id="analytics">
                   <li><a href="#"> Menu Item</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" aria-expanded="true"><i class="fa-solid fa-user-group"></i><span>Customers</span></a>
+                <a href="#" aria-expanded="true"><i class="bi bi-people"></i><span>Customers</span></a>
               </li>
               <li>
-                <a href="#" aria-expanded="true"><i class="fa-solid fa-cart-shopping"></i><span>Orders</span></a>
+                <a href="#" aria-expanded="true"><i class="bi bi-people"></i><span>Orders</span></a>
               </li>
               <li>
-                <a href="#" aria-expanded="true"><i class="fa fa-align-left"></i><span>Products</span></a>
+                <a href="#" aria-expanded="true"><i class="bi bi-text-left"></i><span>Products</span></a>
               </li>
               <li>
-                <a href="#" aria-expanded="true"><i class="fa-solid fa-receipt"></i><span>Invoice</span></a>
+                <a href="#" aria-expanded="true"><i class="bi bi-receipt"></i><span>Invoice</span></a>
               </li>
               <li class="management Pages">Pages</li>
               <li>
-                <a href="#" aria-expanded="true"><i class="fa-solid fa-lock"></i><span>Authontications </span>
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#authontications" aria-controls="authontications"
+                  aria-expanded="true"><i class="bi bi-file-lock"></i><span>Authontications </span>
                 </a>
-                <ul class="collapse">
+                <ul class="collapse" id="authontications">
                   <li><a href="#"> Menu Item</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" aria-expanded="true"><i class="fa-solid fa-calendar-days"></i><span>Calender</span></a>
+                <a href="#" aria-expanded="true"><i class="bi bi-calendar2-week"></i><span>Calender</span></a>
               </li>
               <li class="management Components">Components</li>
               <li>
-                <a href="#" aria-expanded="true"><i class="fa-solid fa-chart-simple"></i><span>Charts </span>
+                <a href="#" aria-expanded="true"><i class="bi bi-bar-chart"></i><span>Charts </span>
                 </a>
               </li>
               <li>
-                <a href="#" aria-expanded="true"><i class="fa-brands fa-uikit"></i><span>UI Elements</span></a>
+                <a href="#" aria-expanded="true"><i class="bi bi-rulers"></i><span>UI Elements</span></a>
               </li>
             </ul>
           </nav>
@@ -86,7 +93,7 @@
         <div class="row align-items-center">
           <div class="col-md-2 col-sm-2 clearfix">
             <div class="nav-btn pull-left">
-              <span><i class="fa-solid fa-bars"></i></span>
+              <span><i class="bi bi-list"></i></span>
             </div>
           </div>
           <div class="col-md-10 col-sm-10 clearfix">
@@ -96,17 +103,17 @@
                   aria-expanded="false" aria-controls="multiCollapseExample2">
                   <img src="./img/03.jpg" alt="User-Profile-Image">
                   <span>John Doe</span>
-                  <i class="fa-solid fa-angle-down"></i>
+                  <i class="bi bi-chevron-down"></i>
                 </div>
                 <ul class="show-user-details shadow collapse" id="multiCollapseExample2">
                   <li>
-                    <a href="#"> <i class="fa-solid fa-gear"></i> Settings </a>
+                    <a href="#"> <i class="bi bi-gear"></i> Settings </a>
                   </li>
                   <li>
-                    <a href="#"> <i class="fa-solid fa-user"></i>Profile </a>
+                    <a href="#"><i class="bi bi-person-fill"></i>Profile </a>
                   </li>
                   <li>
-                    <a href="#"> <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout </a>
+                    <a href="#"> <i class="bi bi-box-arrow-right"></i> Logout </a>
                   </li>
                 </ul>
               </div>
@@ -200,61 +207,120 @@
             <div class="recentUser">
               <div class="card shadow">
                 <div class="card-body">
-                  <h4 class="header-title">Recent users</h4>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="table-left">
+                        <h4 class="header-title">Recent users</h4>
+                      </div>
+                    </div>
+
+                    <div class="col-md-8">
+                      <div class="table-right">
+                        <div class="table_filter_dropdown">
+                          <select class="dropdown-select " id="filterText" >
+                            <option disabled selected>Select</option>
+                            <option value='Active'>Yes</option>
+                            <option value='manager'>No</option>
+                            <option value='crew'>All</option>
+                          </select>
+                        </div>
+                        <div class="table-search">
+                          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."
+                            title="Type in a name">
+                        </div>
+
+                      </div>
+
+
+                    </div>
+                  </div>
+
+
+
                   <div class="single-table">
                     <div class="table-responsive">
-                      <table class="table ">
+
+                      <table class="table" id="table_format">
                         <thead class="text-uppercase">
                           <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">User</th>
+                            <th scope="col">Name</th>
+                            <!-- <th scope="col">Type</th> -->
                             <th scope="col">Status</th>
                             <th scope="col">Date</th>
+                            <th scope="col">Last login</th>
                           </tr>
                         </thead>
                         <tbody class="user-data">
-                          <tr>
+
+                          <tr position="content">
                             <th scope="row">1</th>
                             <td>
                               <span><img src="./img/03.jpg" alt="" /></span>
                               Mark
                             </td>
-
+                            <!-- <td class="membership"> <i class="fa-solid fa-circle"></i>Active memebership</td> -->
                             <td class="membership"><i class="fa-solid fa-circle"></i> Membership</td>
                             <td>01 Jun 2022 12:00 PM</td>
+                            <td>01 Jun 2022 12:00 PM</td>
                           </tr>
-                          <tr>
+                          <tr position="content">
                             <th scope="row">2</th>
                             <td>
                               <span><img src="./img/03.jpg" alt="" /></span>
                               SoHaG
                             </td>
-                            <td class="pending"> <i class="fa-solid fa-circle"></i>Pending</td>
+                            <!-- <td class="membership"> <i class="fa-solid fa-circle"></i>Active membership</td> -->
+                            <td class="pending"> <i class="fa-solid fa-circle"></i>In review</td>
+                            <td>02 Jun 2022 12:00 PM</td>
                             <td>02 Jun 2022 12:00 PM</td>
                           </tr>
-                          <tr>
+
+
+
+                          <tr position="content">
                             <th scope="row">3</th>
                             <td>
                               <span><img src="./img/03.jpg" alt="" /></span>
                               Eklas
                             </td>
+                            <!-- <td class="pending"> <i class="fa-solid fa-circle"></i>Managers</td> -->
                             <td class="pending"> <i class="fa-solid fa-circle"></i>Pending</td>
+
+                            <td>02 Jun 2022 12:00 PM</td>
                             <td>02 Jun 2022 12:00 PM</td>
                           </tr>
-                          <tr>
+                          <tr position="content">
                             <th scope="row">4</th>
                             <td>
                               <span><img src="./img/03.jpg" alt="" /></span>
-                              Jane Doe
+                              Mr. Smith
                             </td>
+                            <!-- <td class="cancelled"> <i class="fa-solid fa-circle"></i>Active memebership</td> -->
                             <td class="cancelled"> <i class="fa-solid fa-circle"></i>Cancelled</td>
+                            <td>02 Jun 2022 12:00 PM</td>
+                            <td>02 Jun 2022 12:00 PM</td>
+                          </tr>
+                          <tr position="content">
+                            <th scope="row">4</th>
+                            <td>
+                              <span><img src="./img/03.jpg" alt="" /></span>
+                              Dark Rose
+                            </td>
+                            <!-- <td class="cancelled"> <i class="fa-solid fa-circle"></i>Crew members</td> -->
+                            <td class="normal"> <i class="fa-solid fa-circle"></i>Normal</td>
+                            <td>02 Jun 2022 12:00 PM</td>
                             <td>02 Jun 2022 12:00 PM</td>
                           </tr>
                         </tbody>
                       </table>
-                      <div class="seel_all">
+
+
+
+
+                      <!-- <div class="seel_all">
                         <button>See All</button>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -267,12 +333,16 @@
   </div>
 
 
+
+
+
+
   <script src="./js/jquery-2.2.4.min.js"></script>
   <script src="./js/chart.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/jquery.slimscroll.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="./js/metisMenu.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
   <script src="./js/app.js"></script>
 </body>
 

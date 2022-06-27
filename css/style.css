@@ -59,6 +59,9 @@ img {
   overflow-y: scroll;
   height: 100%;
 }
+.menu-inner::-webkit-scrollbar{
+  display: none;
+}
 
 .sidebar-header {
   padding: 7px 0px 15px;
@@ -138,16 +141,11 @@ ul#menu {
   top: 12px;
   color: #8d97ad;
   font-size: 15px;
+  transition: .5s;
 }
 
-.metismenu .active a:after {
-  position: absolute;
-  content: "\f107";
-  font-family: fontawesome;
-  right: 15px;
-  top: 12px;
-  color: #8d97ad;
-  font-size: 15px;
+.metismenu li  [aria-expanded="true"]::after {
+   transform: rotate(-90deg);
 }
 
 .metismenu li a:only-child:after {
@@ -316,6 +314,7 @@ ul.show-user-details {
 ul.show-user-details li a i {
   width: 24px;
   font-size: 16px;
+  margin-right: 8px;
 }
 
 ul.show-user-details li a {
@@ -419,8 +418,9 @@ ul.show-user-details li:hover {
 
 .membars-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  grid-gap: 10px;
 }
 .overview-total {
   position: relative;
@@ -459,7 +459,7 @@ tbody.user-data td span img {
   border-radius: 50%;
 }
 .membership {
-  color: green;
+  color: rgb(8 131 57);
   font-weight: 500;
 }
 .pending {
@@ -470,6 +470,10 @@ tbody.user-data td span img {
   color: red;
   font-weight: 500;
 }
+.normal{
+  color: rgb(5, 138, 255);
+  font-weight: 500;
+}
 .card {
   border-radius: 7px;
 }
@@ -477,7 +481,7 @@ tbody.user-data {
   font-size: 15px;
 }
 h4.header-title {
-  border-bottom: 1px solid rgb(141 151 173);
+  /* border-bottom: 1px solid rgb(141 151 173); */
   padding-bottom: 15px;
 }
 .seel_all {
@@ -523,5 +527,27 @@ tbody.user-data tr th {
 table.table {
   border-spacing: 0px;
 }
+.table-right {
+  display: flex;
+  justify-content: flex-end;
+  grid-gap: 14px;
+}
+.table-search input {
+  outline: none;
+  border: 1px solid #ddd;
+  width: 165px;
+  height: 30px;
+}
+select.dropdown-select {
+  height: 30px;
+  border: 1px solid #ddd;
+  outline: none;
+}
 /* Recent User End*/
 
+.odd{
+  background-color: red;
+}
+.even{
+  background-color: green;
+}
