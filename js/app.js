@@ -171,7 +171,6 @@ new Chart(ctxx, {
 });
 
 
-
 // Active MembarShip Chart
 var ctxxx = document.getElementById("chart-cicle").getContext("2d");
 
