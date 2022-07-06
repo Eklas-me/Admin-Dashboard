@@ -11,13 +11,9 @@
     href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700;900&family=Rubik:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css"
-    integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/responsive.css" />
 </head>
@@ -28,11 +24,11 @@
     <div class="sidebar-menu">
       <div class="sidebar-header">
         <div class="logo">
-          <a href="#">Tour <span>Intell</span></a>
+         <a href="index.html"> <img src="./img/290018488_1110770999821005_2691879510461168954_n.png" alt=""></a>
         </div>
       </div>
       <div class="header-text">
-        <a href="#"><i class="bi bi-house-door"></i>Dashboard</a>
+        <a href="index.html"><i class="bi bi-house-door"></i>Dashboard</a>
       </div>
       <div class="main-menu">
         <div class="menu-inner">
@@ -40,46 +36,37 @@
             <ul class="metismenu" id="menu">
               <li class="management">Management</li>
               <li>
-                <a href="#" data-bs-toggle="collapse" data-bs-target="#analytics" aria-controls="analytics"
-                  aria-expanded="true"><i class="bi bi-graph-up"></i><span>Analytics </span>
+                <a href="services.html" data-bs-toggle="collapse show" data-bs-target="#Service" aria-controls="Service"
+                  aria-expanded="true"><i class="bi bi-graph-up"></i><span>Service </span>
                 </a>
 
-                <ul class="collapse" id="analytics">
-                  <li><a href="#"> Menu Item</a></li>
+                <ul class="collapse  " id="Service">
+                  <li><a href="service1.html"> Service 1</a></li>
+                  <li><a href="service2.html"> Service 2</a></li>
+                </ul>
+              </li>
+              <li id="user">
+                <a href="user.html" aria-expanded="true"><i class="bi bi-people"></i><span>Users</span></a>
+              </li>
+              <li>
+                <a href="order.html" data-bs-toggle="collapse show" data-bs-target="#Orders" aria-controls="Orders" aria-expanded="true" <i class="bi bi-cart"></i><span>Orders </span>
+                </a>
+                <ul class="collapse " id="orders">
+                  <li><a href="subscriber.html">Subscriber </a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" aria-expanded="true"><i class="bi bi-people"></i><span>Customers</span></a>
-              </li>
-              <li>
-                <a href="#" aria-expanded="true"><i class="bi bi-people"></i><span>Orders</span></a>
-              </li>
-              <li>
-                <a href="#" aria-expanded="true"><i class="bi bi-text-left"></i><span>Products</span></a>
-              </li>
-              <li>
-                <a href="#" aria-expanded="true"><i class="bi bi-receipt"></i><span>Invoice</span></a>
-              </li>
-              <li class="management Pages">Pages</li>
-              <li>
-                <a href="#" data-bs-toggle="collapse" data-bs-target="#authontications" aria-controls="authontications"
-                  aria-expanded="true"><i class="bi bi-file-lock"></i><span>Authontications </span>
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#settings" aria-controls="settings"
+                  aria-expanded="true"><i class="bi bi-file-lock"></i><span>Settings </span>
                 </a>
-                <ul class="collapse" id="authontications">
-                  <li><a href="#"> Menu Item</a></li>
+                <ul class="collapse" id="settings">
+                  <li><a href="frequencys.html">Frequency </a></li>
+                  <li><a href="#">Tax System </a></li>
+                  <li><a href="#">Languages </a></li>
+                  <li><a href="#">E-mail Settings </a></li>
                 </ul>
               </li>
-              <li>
-                <a href="#" aria-expanded="true"><i class="bi bi-calendar2-week"></i><span>Calender</span></a>
-              </li>
-              <li class="management Components">Components</li>
-              <li>
-                <a href="#" aria-expanded="true"><i class="bi bi-bar-chart"></i><span>Charts </span>
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-expanded="true"><i class="bi bi-rulers"></i><span>UI Elements</span></a>
-              </li>
+
             </ul>
           </nav>
         </div>
@@ -91,14 +78,13 @@
     <div class="main-content">
       <div class="header-area sticky-top ">
         <div class="row align-items-center">
-          <div class="col-md-2 col-sm-2 clearfix">
+          <div class="col-md-2 col-sm-2 header-left">
             <div class="nav-btn pull-left">
               <span><i class="bi bi-list"></i></span>
             </div>
           </div>
-          <div class="col-md-10 col-sm-10 clearfix">
+          <div class="col-md-10 col-sm-10 header-right">
             <ul class="notification-area">
-              <img class="dark-theme-icon" src="./img/moon.png" alt="">
               <div class="user-wrapper">
                 <div class="user-details" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
                   aria-expanded="false" aria-controls="multiCollapseExample2">
@@ -203,142 +189,6 @@
         <!-- Chart End -->
 
         <!-- Recent User table Start -->
-        <div class="row  " data-aos="fade-up">
-          <div class="col-md-8">
-            <div class="recentUser">
-              <div class="card shadow">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="table-left">
-                        <h4 class="header-title">Recent users</h4>
-                      </div>
-                    </div>
-
-                    <div class="col-md-8">
-                      <div class="table-right">
-                        <div class="table_filter_dropdown">
-                          <select class="dropdown-select " id="filterText" >
-                            <option disabled selected>Select</option>
-                            <option value='Active'>Active Membarship</option>
-                            <option value='manager'>Managers</option>
-                            <option value='crew'>Crew Membars</option>
-                          </select>
-                        </div>
-                        <div class="table-search">
-                          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."
-                            title="Type in a name">
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="single-table">
-                    <div class="table-responsive">
-                      <table class="table" id="table_format">
-                        <thead class="text-uppercase">
-                          <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Name</th>
-                            <!-- <th scope="col">Type</th> -->
-                            <th scope="col">Status</th>
-                            <th scope="col">Date</th>
-                            <th scope="col">Last login</th>
-                          </tr>
-                        </thead>
-                        <tbody class="user-data">
-
-                          <tr position="content">
-                            <th scope="row">1</th>
-                            <td>
-                              <span><img src="./img/03.jpg" alt="" /></span>
-                              Mark
-                            </td>
-                            <!-- <td class="membership"> <i class="fa-solid fa-circle"></i>Active memebership</td> -->
-                            <td class="membership"><i class="fa-solid fa-circle"></i> Membership</td>
-                            <td>01 Jun 2022 12:00 PM</td>
-                            <td>01 Jun 2022 12:00 PM</td>
-                          </tr>
-                          <tr position="content">
-                            <th scope="row">2</th>
-                            <td>
-                              <span><img src="./img/03.jpg" alt="" /></span>
-                              SoHaG
-                            </td>
-                            <!-- <td class="membership"> <i class="fa-solid fa-circle"></i>Active membership</td> -->
-                            <td class="pending"> <i class="fa-solid fa-circle"></i>In review</td>
-                            <td>02 Jun 2022 12:00 PM</td>
-                            <td>02 Jun 2022 12:00 PM</td>
-                          </tr>
-
-
-
-                          <tr position="content">
-                            <th scope="row">3</th>
-                            <td>
-                              <span><img src="./img/03.jpg" alt="" /></span>
-                              Eklas
-                            </td>
-                            <!-- <td class="pending"> <i class="fa-solid fa-circle"></i>Managers</td> -->
-                            <td class="pending"> <i class="fa-solid fa-circle"></i>Pending</td>
-
-                            <td>02 Jun 2022 12:00 PM</td>
-                            <td>02 Jun 2022 12:00 PM</td>
-                          </tr>
-                          <tr position="content">
-                            <th scope="row">4</th>
-                            <td>
-                              <span><img src="./img/03.jpg" alt="" /></span>
-                              Mr. Smith
-                            </td>
-                            <!-- <td class="cancelled"> <i class="fa-solid fa-circle"></i>Active memebership</td> -->
-                            <td class="cancelled"> <i class="fa-solid fa-circle"></i>Cancelled</td>
-                            <td>02 Jun 2022 12:00 PM</td>
-                            <td>02 Jun 2022 12:00 PM</td>
-                          </tr>
-                          <tr position="content">
-                            <th scope="row">4</th>
-                            <td>
-                              <span><img src="./img/03.jpg" alt="" /></span>
-                              Dark Rose
-                            </td>
-                            <!-- <td class="cancelled"> <i class="fa-solid fa-circle"></i>Crew members</td> -->
-                            <td class="normal"> <i class="fa-solid fa-circle"></i>Normal</td>
-                            <td>02 Jun 2022 12:00 PM</td>
-                            <td>02 Jun 2022 12:00 PM</td>
-                          </tr>
-                        </tbody>
-                      </table>
-
-                      <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-end my-0">
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                            </a>
-                          </li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                      <!-- <div class="seel_all">
-                        <button>See All</button>
-                      </div> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -349,9 +199,196 @@
   <script src="./js/chart.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
-
   <script src="./js/app.js"></script>
-</body>
+  <script>
+    // Membership Reports Chart
+    const ctx = document.getElementById("myChart").getContext("2d");
+    let delayed;
+    var gradient = ctx.createLinearGradient(0, 0, 0, 50);
 
+    gradient.addColorStop(1, "rgba(71,101,246, 0.2)");
+    gradient.addColorStop(0, "rgba(71,101,246,1)");
+
+    const labels = ["Jun 1", "Jun 2", "Jun 3", "Jun 4", "Jun 5", "Jun 6", "Jun 7"];
+
+    const data = {
+      labels: labels,
+      datasets: [
+        {
+          label: "Incomes",
+          fill: true,
+          backgroundColor: gradient,
+          borderColor: "#4765f6",
+          pointBackgroundColor: "#fff",
+          tension: 0.4,
+          data: [2, 10, 5, 15, 20, 30, 50],
+        },
+      ],
+    };
+
+    const config = {
+      type: "line",
+      data: data,
+      options: {
+        radius: 3,
+        hitRadius: 30,
+        hoverRadius: 8,
+        animation: {
+          onComplete: () => {
+            delayed = true;
+          },
+          delay: (context) => {
+            let delay = 0;
+            if (context.type === "data" && context.mode === "default" && !delayed) {
+              delay = context.dataIndex * 300 + context.datasetIndex * 100;
+            }
+            return delay;
+          },
+        },
+        plugins: {
+          legend: {
+            display: true,
+            position: "top",
+            align: "end",
+            labels: {
+              fontColor: "#fff",
+              fontSize: 12,
+              usePointStyle: true,
+              padding: 20,
+              boxWidth: 10,
+              usePointStyle: true,
+              pointStyle: "rectRounded",
+              pointRadius: 5,
+              pointBorderWidth: 2,
+            },
+          },
+        },
+      },
+    };
+
+    const myChart = new Chart(ctx, config);
+
+    // Active User Chart
+    var ctxx = document.getElementById("chart-bars").getContext("2d");
+
+    new Chart(ctxx, {
+      type: "bar",
+      data: {
+        labels: ["M", "T", "W", "T", "F", "S", "S"],
+        datasets: [
+          {
+            label: "Users",
+            tension: 0.4,
+            borderWidth: 0,
+            borderRadius: 4,
+            borderSkipped: false,
+            backgroundColor: "#4765F6",
+            data: [50, 20, 10, 22, 50, 10, 40],
+            maxBarThickness: 6,
+          },
+        ],
+      },
+      options: {
+        // responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
+        interaction: {
+          intersect: false,
+          mode: "index",
+        },
+        scales: {
+          y: {
+            grid: {
+              drawBorder: false,
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: false,
+              borderDash: [5, 5],
+              color: "#fff",
+            },
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 500,
+              beginAtZero: true,
+              padding: 5,
+              font: {
+                size: 14,
+                weight: 300,
+                family: "Roboto",
+                style: "normal",
+                lineHeight: 2,
+              },
+              color: "rgba(15, 45, 105, 1)",
+            },
+          },
+          x: {
+            grid: {
+              drawBorder: false,
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: false,
+              borderDash: [5, 5],
+              color: "#fff",
+            },
+            ticks: {
+              display: true,
+              color: "rgba(15, 45, 105, .8)",
+              padding: 10,
+              font: {
+                size: 14,
+                weight: 300,
+                family: "Roboto",
+                style: "normal",
+                lineHeight: 2,
+              },
+            },
+          },
+        },
+      },
+    });
+
+
+    // Active MembarShip Chart
+    var ctxxx = document.getElementById("chart-cicle").getContext("2d");
+
+    new Chart(ctxxx, {
+      type: "doughnut",
+      data: {
+        labels: ["Active Membarship", "Inactive Membarship"],
+        datasets: [
+          {
+            label: "Users",
+            tension: 0.4,
+            borderWidth: 0,
+            borderSkipped: false,
+            backgroundColor: ["#fff", "#788ef9"],
+            data: [90, 50],
+            maxBarThickness: 5,
+          },
+        ],
+      },
+      options: {
+        //  
+        maintainAspectRatio: false,
+        cutout: 50,
+        animation: {
+          duration: 2000,
+        },
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
+        interaction: {
+          intersect: false,
+          mode: "index",
+        },
+      },
+    });
+  </script>
+</body>
 </html>

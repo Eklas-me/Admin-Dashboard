@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Admin Panel</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500;700;900&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+
+<body>
+  <!-- sidebar menu start -->
+  <div class="page-container">
+    <div class="sidebar-menu">
+      <div class="sidebar-header">
+        <div class="logo">
+          <a href="index.html"> <img src="./img/290018488_1110770999821005_2691879510461168954_n.png" alt=""></a>
+        </div>
+      </div>
+      <div class="header-text">
+        <a href="index.html"><i class="bi bi-house-door"></i>Dashboard</a>
+      </div>
+      <div class="main-menu">
+        <div class="menu-inner">
+          <nav>
+            <ul class="metismenu" id="menu">
+              <li class="management">Management</li>
+              <li>
+                <a href="services.html" data-bs-target="#services" aria-controls="services" aria-expanded="true"><i
+                    class="bi bi-graph-up"></i><span>Services </span>
+                </a>
+
+                <ul class="collapse" id="services">
+                  <li><a href="service1.html"> Services 1</a></li>
+                  <li><a href="service2.html"> Services 2</a></li>
+                </ul>
+              </li>
+              <li id="user">
+                <a href="user.html" aria-expanded="true"><i class="bi bi-people"></i><span>Users</span></a>
+              </li>
+              <li>
+                <a href="order.html" <i class="bi bi-cart"></i><span>Orders </span></a>
+                <ul class="collapse" id="orders">
+                  <li><a href="subscriber.html">Subscriber </a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#settings" aria-controls="settings"
+                  aria-expanded="true"><i class="bi bi-file-lock"></i><span>Settings </span>
+                </a>
+                <ul class="collapse" id="settings">
+                  <li><a href="frequencys.html">Frequency </a></li>
+                  <li><a href="#">Tax System </a></li>
+                  <li><a href="#">Languages </a></li>
+                  <li><a href="#">E-mail Settings </a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- sidebar menu End -->
+
+    <!-- header area start -->
+    <div class="main-content">
+      <div class="header-area sticky-top ">
+        <div class="row align-items-center">
+          <div class="col-md-2 col-sm-2 header-left">
+            <div class="nav-btn pull-left">
+              <span><i class="bi bi-list"></i></span>
+            </div>
+          </div>
+          <div class="col-md-10 col-sm-10 header-right">
+            <ul class="notification-area">
+              <div class="user-wrapper">
+                <div class="user-details" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
+                  aria-expanded="false" aria-controls="multiCollapseExample2">
+                  <img src="./img/03.jpg" alt="User-Profile-Image">
+                  <span>John Doe</span>
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+                <ul class="show-user-details shadow collapse" id="multiCollapseExample2">
+                  <li>
+                    <a href="#"> <i class="bi bi-gear"></i> Settings </a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bi bi-person-fill"></i>Profile </a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="bi bi-box-arrow-right"></i> Logout </a>
+                  </li>
+                </ul>
+              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- header area end -->
+
+      <!-- main content area start -->
+      <div class="main-content-inner pt-4">
+        <div class="row pb-3 pt-3">
+          <div class="col-md-2 col-sm-2">
+            <h4 style="margin-bottom: 0;">Users</h4>
+          </div>
+          <div class="col-md-10 col-sm-10"> </div>
+        </div>
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-12 position-relative">
+            <div class="recentUser">
+              <div class="card shadow">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="table-left">
+                        <a href="#" class="add-user"> <span><i class="bi bi-person-plus"></i></span> Add User</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single-table">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead class="text-uppercase">
+                          <tr>
+                            <th class="text-nowrap" scope="col">User ID</th>
+                            <th class="text-nowrap" scope="col">First Name</th>
+                            <th class="text-nowrap" scope="col">Last Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Services</th>
+                            <th scope="col">Active</th>
+                          </tr>
+                        </thead>
+
+                        <tbody class="user-data">
+                          <tr>
+                            <td scope="row">01</td>
+                            <td scope="row">Eklas</td>
+                            <td scope="row">Mahmud</td>
+                            <td scope="row">KH.Eklas502@gmail.com</td>
+                            <td scope="row"><a href="#">Service 4</a></td>
+                            <td scope="row">
+                              <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="add-userTable-btn">
+                                <a href="addUser.html" class="edit-btn"><i class="bi bi-pencil-square"></i></a>
+                                <a href="#" class="del-btn"><i class="bi bi-trash"></i></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row">02</td>
+                            <td scope="row">Eklas</td>
+                            <td scope="row">Mahmud</td>
+                            <td scope="row">KH.Eklas502@gmail.com</td>
+                            <td scope="row"><a href="#">Service 4</a></td>
+                            <td scope="row">
+                              <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="add-userTable-btn">
+                                <a href="addUser.html" class="edit-btn"><i class="bi bi-pencil-square"></i></a>
+                                <a href="#" class="del-btn"><i class="bi bi-trash"></i></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row">03</td>
+                            <td scope="row">Eklas</td>
+                            <td scope="row">Mahmud</td>
+                            <td scope="row">KH.Eklas502@gmail.com</td>
+                            <td scope="row"><a href="#">Service 4</a></td>
+                            <td scope="row">
+                              <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="add-userTable-btn">
+                                <a href="addUser.html" class="edit-btn"><i class="bi bi-pencil-square"></i></a>
+                                <a href="#" class="del-btn"><i class="bi bi-trash"></i></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row">04</td>
+                            <td scope="row">Eklas</td>
+                            <td scope="row">Mahmud</td>
+                            <td scope="row">KH.Eklas502@gmail.com</td>
+                            <td scope="row"><a href="#">Service 4</a></td>
+                            <td scope="row">
+                              <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="add-userTable-btn">
+                                <a href="addUser.html" class="edit-btn"><i class="bi bi-pencil-square"></i></a>
+                                <a href="#" class="del-btn"><i class="bi bi-trash"></i></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row">05</td>
+                            <td scope="row">Eklas</td>
+                            <td scope="row">Mahmud</td>
+                            <td scope="row">KH.Eklas502@gmail.com</td>
+                            <td scope="row"><a href="#">Service 4</a></td>
+                            <td scope="row">
+                              <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="add-userTable-btn">
+                                <a href="addUser.html" class="edit-btn"><i class="bi bi-pencil-square"></i></a>
+                                <a href="#" class="del-btn"><i class="bi bi-trash"></i></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row">06</td>
+                            <td scope="row">Eklas</td>
+                            <td scope="row">Mahmud</td>
+                            <td scope="row">KH.Eklas502@gmail.com</td>
+                            <td scope="row"><a href="#">Service 4</a></td>
+                            <td scope="row">
+                              <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="add-userTable-btn">
+                                <a href="addUser.html" class="edit-btn"><i class="bi bi-pencil-square"></i></a>
+                                <a href="#" class="del-btn"><i class="bi bi-trash"></i></a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row">07</td>
+                            <td scope="row">Eklas</td>
+                            <td scope="row">Mahmud</td>
+                            <td scope="row">KH.Eklas502@gmail.com</td>
+                            <td scope="row"><a href="#">Service 4</a></td>
+                            <td scope="row">
+                              <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="add-userTable-btn">
+                                <a href="addUser.html" class="edit-btn"><i class="bi bi-pencil-square"></i></a>
+                                <a href="#" class="del-btn"><i class="bi bi-trash"></i></a>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/jquery-2.2.4.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

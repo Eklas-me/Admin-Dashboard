@@ -6,8 +6,6 @@
   $(".nav-btn").on("click", function () {
     $(".page-container").toggleClass("sbar_collapsed");
   });
-
-
 })(jQuery);
 
 
@@ -17,220 +15,126 @@ AOS.init({
 });
 
 
-// Membership Reports Chart
-const ctx = document.getElementById("myChart").getContext("2d");
-let delayed;
-var gradient = ctx.createLinearGradient(0, 0, 0, 50);
 
-gradient.addColorStop(1, "rgba(71,101,246, 0.2)");
-gradient.addColorStop(0, "rgba(71,101,246,1)");
+// Service 1
 
-const labels = ["Jun 1", "Jun 2", "Jun 3", "Jun 4", "Jun 5", "Jun 6", "Jun 7"];
+function  hawkinsValueSelector() {
+  let HawkinsValue = document.getElementById("HawkinsValue").value;
+  let valueStatus = document.getElementById("valueStatus").value;
+  let addValue = document.querySelector(".add-value");
+  // let deleteValue = document.querySelector("#deleteValue");
+  let textValue = document.getElementById("textValue");
 
-const data = {
-  labels: labels,
-  datasets: [
-    {
-      label: "Incomes",
-      fill: true,
-      backgroundColor: gradient,
-      borderColor: "#4765f6",
-      pointBackgroundColor: "#fff",
-      tension: 0.4,
-      data: [2, 10, 5, 15, 20, 30, 50],
-    },
-  ],
-};
-
-const config = {
-  type: "line",
-  data: data,
-  options: {
-    radius: 3,
-    hitRadius: 30,
-    hoverRadius: 8,
-    animation: {
-      onComplete: () => {
-        delayed = true;
-      },
-      delay: (context) => {
-        let delay = 0;
-        if (context.type === "data" && context.mode === "default" && !delayed) {
-          delay = context.dataIndex * 300 + context.datasetIndex * 100;
-        }
-        return delay;
-      },
-    },
-    plugins: {
-      legend: {
-        display: true,
-        position: "top",
-        align: "end",
-        labels: {
-          fontColor: "#fff",
-          fontSize: 12,
-          usePointStyle: true,
-          padding: 20,
-          boxWidth: 10,
-          usePointStyle: true,
-          pointStyle: "rectRounded",
-          pointRadius: 5,
-          pointBorderWidth: 2,
-        },
-      },
-    },
-  },
-};
-
-const myChart = new Chart(ctx, config);
-
-
-
-// Active User Chart
-
-var ctxx = document.getElementById("chart-bars").getContext("2d");
-
-new Chart(ctxx, {
-  type: "bar",
-  data: {
-    labels: ["M", "T", "W", "T", "F", "S", "S"],
-    datasets: [
-      {
-        label: "Users",
-        tension: 0.4,
-        borderWidth: 0,
-        borderRadius: 4,
-        borderSkipped: false,
-        backgroundColor: "#4765F6",
-        data: [50, 20, 10, 22, 50, 10, 40],
-        maxBarThickness: 6,
-      },
-    ],
-  },
-  options: {
-    // responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-      legend: {
-        display: false,
-      },
-    },
-    interaction: {
-      intersect: false,
-      mode: "index",
-    },
-    scales: {
-      y: {
-        grid: {
-          drawBorder: false,
-          display: true,
-          drawOnChartArea: true,
-          drawTicks: false,
-          borderDash: [5, 5],
-          color: "#fff",
-        },
-        ticks: {
-          suggestedMin: 0,
-          suggestedMax: 500,
-          beginAtZero: true,
-          padding: 5,
-          font: {
-            size: 14,
-            weight: 300,
-            family: "Roboto",
-            style: "normal",
-            lineHeight: 2,
-          },
-          color: "rgba(15, 45, 105, 1)",
-        },
-      },
-      x: {
-        grid: {
-          drawBorder: false,
-          display: true,
-          drawOnChartArea: true,
-          drawTicks: false,
-          borderDash: [5, 5],
-          color: "#fff",
-        },
-        ticks: {
-          display: true,  
-          color: "rgba(15, 45, 105, .8)",
-          padding: 10,
-          font: {
-            size: 14,
-            weight: 300,
-            family: "Roboto",
-            style: "normal",
-            lineHeight: 2,
-          },
-        },
-      },
-    },
-  },
-});
-
-
-// Active MembarShip Chart
-var ctxxx = document.getElementById("chart-cicle").getContext("2d");
-
-new Chart(ctxxx, {
-  type: "doughnut",
-  data: {
-    labels: ["Active Membarship", "Inactive Membarship"],
-    datasets: [
-      {
-        label: "Users",
-        tension: 0.4,
-        borderWidth: 0,
-        borderSkipped: false,
-        backgroundColor: ["#fff", "#788ef9"],
-        data: [90, 50],
-        maxBarThickness: 5,
-      },
-    ],
-  },
-  options: {
-    //  
-    maintainAspectRatio: false,
-    cutout: 50,
-    animation: {  
-      duration: 2000,    
-    },
-    plugins: {
-      legend: {
-        display: false,
-      },
-    },
-    interaction: {
-      intersect: false,
-      mode: "index",
-    },
-  },
-});
-
-
-
-
-// Table Data search filters
-function myFunction() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("table_format");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
+  addValue.onclick = function () {
+    if(HawkinsValue && valueStatus) {
+      // textValue.innerHTML += `${HawkinsValue} ${valueStatus}`;
+      var values = `<p class="price__field">${HawkinsValue} ${valueStatus}   <span class="deleteBtn"><i class="bi bi-dash-circle"></i></span> </p>`;
+      textValue.innerHTML += values;
+      let priceField = document.querySelectorAll(".price__field");
+      let deleteBtn = document.querySelectorAll(".deleteBtn");
+      for(let i = 0; i < deleteBtn.length; i++){
+          deleteBtn[i].addEventListener("click", ()=>{
+            priceField[i].remove();
+         });
       }
-    }       
+    }
   }
-}
+  
+};
+
+
+
+
+function dataFields() {
+
+
+
+  let addDataBtn = document.querySelector(".addDataBtn");
+
+
+
+  addDataBtn.onclick = function () {
+    let inputDataFields = document.querySelector("#inputDataFields").value;
+    let requiredFields = document.getElementById("requiredField");
+    let dataFields = document.getElementById("datafield");
+    let showValue = document.querySelector("#showValue");
+    let input = document.createElement("input");
+    input.setAttribute("type", "text");
+
+    let tr = document.createElement("tr");  
+    let th = document.createElement("th");  
+    let td = document.createElement("td");  
+
+    let data = document.querySelector(".data");
+    
+    if(requiredFields.value == "required"){
+      input.setAttribute("required", "");
+      var tableRow = data.innerHTML += ` <th>${inputDataFields} *</th>`;
+    } else {
+      input.removeAttribute("required");
+      data.innerHTML += `<p>${inputDataFields}  </p>`;
+    } 
+
+
+    if(dataFields.value == "text"){
+      input.setAttribute("type", "text");
+    }
+     else if(dataFields.value == "date"){ 
+      input.setAttribute("type", "date");
+    }
+     else if(dataFields.value == "number"){ 
+      input.setAttribute("type", "number");
+
+    }
+    data.appendChild(input);
+
+  }
+
+};
+
+
+
+
+
+
+// Add user
+
+let formCheckInput = document.querySelectorAll(".form-check-input");
+for(let i = 0; i < formCheckInput.length; i++){
+  formCheckInput[i].addEventListener("click", ()=>{
+    let addUserCard = document.querySelector(".add-user-card");
+    let userCard = `<div class=" card-${i+1}  service-bottom-edit shadow" data-aos="fade-up">
+    <h3>Service ${i+1}</h3>
+    <a href="service2.html"><span><i class="bi bi-pencil-fill"></i></span></a>
+    </div>`;
+    if(formCheckInput[i].getAttribute("checked") == null ){
+      addUserCard.innerHTML += userCard;
+      formCheckInput[i].setAttribute("checked", "");
+    }else{
+      formCheckInput[i].removeAttribute("checked");
+      document.querySelector(`.card-${i+1}`).remove();
+    }
+
+  });
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 

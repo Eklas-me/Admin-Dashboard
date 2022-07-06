@@ -1,14 +1,8 @@
 body {
   font-family: "Roboto", sans-serif;
+  color: #444;
 }
-:root{
-  --primary-color: #f5f5f5;
-  --secondary-color: #000;
-}
-.dark-mode{
- --primary-color: #000;
-  --secondary-color: #f5f5f5;
-}
+
 img {
   width: 100%;
 }
@@ -34,7 +28,9 @@ img {
 .main-content-inner {
   padding: 0 30px 50px;
 }
+
 /* Core Css End */
+
 
 /* Sidebar css Start */
 .sidebar-menu {
@@ -45,7 +41,7 @@ img {
   height: 100vh;
   width: 280px;
   overflow: hidden;
-  background: #0c2556;
+  background: #000;
   box-shadow: 2px 0 32px rgba(0, 0, 0, 0.05);
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -67,29 +63,21 @@ img {
   overflow-y: scroll;
   height: 100%;
 }
-.menu-inner::-webkit-scrollbar{
+
+.menu-inner::-webkit-scrollbar {
   display: none;
 }
 
 .sidebar-header {
   padding: 7px 0px 15px;
-  background: #0c2556;
+  background: #000;
 }
+
 .sidebar-menu .logo {
-  text-align: center;
+  padding: 12px;
 }
-.logo a {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: 500;
-  color: #4765f6;
-  font-family: "Pacifico", cursive;
-  letter-spacing: 2px;
-}
-.logo a span {
-  color: rgb(255, 255, 255);
-}
+
+
 
 .header-text a {
   text-decoration: none;
@@ -103,9 +91,10 @@ img {
 
 .header-text {
   padding: 6px 22px;
-  background: #0f2d69;
+  background: #000;
   margin-top: 5px;
 }
+
 li.management {
   padding: 0 25px 10px;
   text-transform: uppercase;
@@ -114,15 +103,19 @@ li.management {
   font-family: "Rubik";
   color: #7d838f;
 }
+
 ul#menu {
   padding: 0;
 }
+
 .metismenu li {
   list-style: none;
 }
-.metismenu > li > a {
+
+.metismenu>li>a {
   padding-left: 32px !important;
 }
+
 .metismenu li a {
   position: relative;
   display: block;
@@ -143,17 +136,19 @@ ul#menu {
 
 .metismenu li a:after {
   position: absolute;
-  content: "\f104";
-  font-family: fontawesome;
+  content: "\F282";
+  font-family: "Bootstrap-icons";
   right: 15px;
   top: 12px;
   color: #8d97ad;
   font-size: 15px;
   transition: .5s;
+  font-weight: 600;
 }
 
-.metismenu li  [aria-expanded="true"]::after {
-   transform: rotate(-90deg);
+.metismenu li [aria-expanded="true"]::after {
+  transform: rotate(90deg);
+  color: #d8e3e7;
 }
 
 .metismenu li a:only-child:after {
@@ -164,8 +159,8 @@ ul#menu {
   margin-left: 10px;
 }
 
-.metismenu li.active > a,
-.metismenu li:hover > a {
+.metismenu li.active>a,
+.metismenu li:hover>a {
   color: #fff;
 }
 
@@ -177,33 +172,36 @@ ul#menu {
   padding-left: 37px;
 }
 
-.metismenu > li:hover > a,
-.metismenu > li.active > a {
+.metismenu>li:hover>a,
+.metismenu>li.active>a {
   color: #fff;
-  background: #0f2d69;
+  background: #152D35;
 }
 
-.metismenu li:hover > a,
-.metismenu li.active > a {
+.metismenu li:hover>a,
+.metismenu li.active>a {
   color: #fff;
 }
 
-.metismenu li:hover > a i,
-.metismenu li.active > a i {
+.metismenu li:hover>a i,
+.metismenu li.active>a i {
   color: #fff;
 }
 
 .metismenu li li a:after {
   top: 6px;
 }
+
 li.management.Pages {
   margin: 12px 0;
   padding-bottom: 0;
 }
+
 li.management.Components {
   margin: 12px 0;
   padding-bottom: 0;
 }
+
 /* Sidebar css End */
 
 /* Header Css Start */
@@ -243,24 +241,28 @@ li.management.Components {
   z-index: 1;
   padding-right: 12px;
 }
+
 ul.notification-area .dark-theme-icon {
   width: 30px;
   height: 30px;
   margin-top: 5px;
 }
+
 .notification-area li {
   display: inline-block;
   margin-left: 12px;
   cursor: pointer;
   color: rgb(141 151 173);
 }
-.notification-area li > i {
+
+.notification-area li>i {
   font-size: 18px;
   vertical-align: middle;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
   -webkit-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s;
 }
+
 li.user-logo {
   width: 35px;
   border-radius: 50%;
@@ -281,6 +283,7 @@ li.user-logo img {
   padding: 7px 2px;
   font-size: 20px;
 }
+
 .notification-area li:nth-child(3) {
   color: rgb(192, 170, 170);
 }
@@ -288,9 +291,11 @@ li.user-logo img {
 ul.notification-area {
   margin-bottom: 0;
 }
-.user-details{
+
+.user-details {
   cursor: pointer;
 }
+
 .user-details img {
   width: 40px;
   border-radius: 50%;
@@ -311,7 +316,7 @@ ul.show-user-details li {
 
 ul.show-user-details {
   padding-left: 0;
-  background: #0c2556;
+  background: #000;
   position: absolute;
   top: 57px;
   left: -14px;
@@ -335,12 +340,15 @@ ul.show-user-details li a {
   font-size: 18px;
   color: #fff;
 }
+
 ul.show-user-details li:hover {
   background: #0f2d69;
   border-radius: 7px;
 }
 
-.user-details {margin-left: 15px;}
+.user-details {
+  margin-left: 15px;
+}
 
 .user-details span {
   color: #000;
@@ -370,18 +378,21 @@ ul.show-user-details li:hover {
   color: rgb(117 127 149);
   font-weight: 400;
 }
+
 .dashboard_card strong {
   font-size: 25px;
   font-family: "Rubik";
   font-weight: 500;
   margin-right: 4px;
 }
+
 .dashboard_card span {
   color: rgb(8 131 57);
   font-weight: 500;
   position: relative;
   top: -3px;
 }
+
 /* Card  Section Css End */
 
 /* Chart start */
@@ -399,6 +410,7 @@ ul.show-user-details li:hover {
   font-weight: 500;
   font-family: "Rubik";
 }
+
 .chart2 span {
   position: absolute;
   top: 18px;
@@ -406,21 +418,25 @@ ul.show-user-details li:hover {
   font-weight: 500;
   font-family: "Rubik";
 }
+
 .activMembarship {
   background: #4765f6;
   color: #fff;
   margin: 0 0px;
   padding: 15px 8px 16px;
 }
+
 .members h4 {
   display: inline-block;
   font-size: 27px;
   font-weight: 500;
 }
+
 .members strong {
   color: rgb(208 214 225);
   font-size: 15px;
 }
+
 .members p {
   color: rgb(208 214 225);
   font-size: 18px;
@@ -434,9 +450,11 @@ ul.show-user-details li:hover {
   align-items: center;
   grid-gap: 10px;
 }
+
 .overview-total {
   position: relative;
 }
+
 .overview-total .overview-num {
   font-size: 20px;
   position: absolute;
@@ -444,10 +462,11 @@ ul.show-user-details li:hover {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 .chart2 {
   position: relative;
   background: #fff;
-  padding: 50px 10px 10px;  
+  padding: 50px 10px 10px;
   border-radius: 7px;
 }
 
@@ -455,47 +474,24 @@ ul.show-user-details li:hover {
 
 /* Recent User */
 table thead tr th {
-  color: rgb(141 151 173);
-  font-family: "Rubik";
-  font-size: 13px;
-}
-tbody.user-data td span {
-  width: 35px;
-  height: 35px;
-  display: inline-block;
-  border-radius: 50%;
-  margin-right: 6px;
+  color: #444;
+  /* font-family: "Rubik"; */
+  font-size: 14px;
+  font-weight: 500;
 }
 
 tbody.user-data td span img {
   border-radius: 50%;
 }
-.membership {
-  color: rgb(8 131 57);
-  font-weight: 500;
-}
-.pending {
-  color: rgb(239 186 7);
-  font-weight: 500;
-}
-.cancelled {
-  color: red;
-  font-weight: 500;
-}
-.normal{
-  color: rgb(5, 138, 255);
-  font-weight: 500;
-}
+
 .card {
   border-radius: 7px;
 }
+
 tbody.user-data {
   font-size: 15px;
 }
-h4.header-title {
-  /* border-bottom: 1px solid rgb(141 151 173); */
-  padding-bottom: 15px;
-}
+
 .seel_all {
   text-align: right;
 }
@@ -525,42 +521,35 @@ tbody.user-data tr:hover {
 tbody.user-data tr {
   transition: 0.5s ease;
 }
-tbody.user-data tr td i {
-  font-size: 9px;
-  margin-right: 8px;
-}
-tbody.user-data tr td {
-  line-height: 29px;
+
+tbody.user-data tr td,
+th {
+  line-height: 30px;
+  padding: 10px 40px 10px 7px;
+  /* border: 1px solid #ddd; */
+  font-size: 14px;
+  text-align: left;
 }
 
 tbody.user-data tr th {
   line-height: 34px;
 }
+
 table.table {
   border-spacing: 0px;
 }
+
 .table-right {
   display: flex;
   justify-content: flex-end;
   grid-gap: 14px;
   font-size: 14px;
 }
-.table-search input {
-  outline: none;
-  border: 1px solid #ddd;
-  width: 165px;
-  height: 30px;
-}
-select.dropdown-select {
-  height: 30px;
-  border: 1px solid #ddd;
-  outline: none;
-  background: #fff;
-}
-tbody.user-data {
-  font-size: 13px;
-}
 
+
+tbody.user-data {
+  font-size: 18px;
+}
 
 li.page-item a {
   color: #000;
@@ -568,3 +557,699 @@ li.page-item a {
 }
 
 /* Recent User End*/
+
+
+
+
+
+
+/* User Page Css Start */
+button.add-user {
+  border: none;
+  outline: none;
+  padding: 7px 14px;
+  font-size: 17px;
+  margin-bottom: 8px;
+  transition: .5s;
+  background: #000000;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+button.add-user span {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+button.add-user:hover {
+  background: #fff;
+  color: #444;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 23px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+a.edit-btn {
+  border: none;
+  background: #fff0;
+  font-size: 25px;
+  transition: .5s;
+  color:#444;
+  margin-right: 10px;
+}
+
+a.del-btn {
+  border: none;
+  background: #fff0;
+  font-size: 25px;
+  transition: .5s;
+  color:#444;
+}
+
+button.edit-btn:hover {
+  background: #ddd;
+}
+
+button.del-btn:hover {
+  background: #ddd;
+}
+
+tbody.user-data tr td:nth-child(5) a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+
+
+/* Service Page Css */
+.service-add-btn  {
+  margin-bottom:20px;
+}
+
+.service-add-btn a {
+    text-decoration: none;
+    background: #000000;
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 500;
+    border: 1px solid #ddd;
+    transition:.5s;
+}
+.service-add-btn a:hover {
+  border:1px solid #444;
+  background:#fff;
+  color:#444;
+}
+.service-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.service-name p {
+  margin-bottom: 0;
+  /* padding-left: 15px; */
+}
+
+
+
+
+/* Add Frequencys Css */
+.add-frequencys {
+  position: absolute;
+  /* top: 50%; */
+  /* left: 50%; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00000059;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.add-frequencys.frequency-show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.frequencys {
+  position: relative;
+}
+
+.add-frequencys input {
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  background: #fff;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+
+.add-frequencys button.add-btn {
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.frequency-table {
+  padding: 20px 35px;
+  background: #fff;
+  border-radius: 7px;
+}
+.frequencyAddBtn input {
+  border: 1px solid #ddd;
+  outline: none;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+.frequencyAddBtn span {
+  margin-left: 10px;
+  -webkit-text-stroke-width: medium;
+  color: limegreen;
+  font-size: 24px;
+}
+
+/* Order page  */
+
+.table-left select {
+  border: none;
+  outline: none;
+  padding: 0.375rem 0.75rem;
+  background-color: #f3f8fb;
+
+  border: 1px solid #ddd;
+}
+.table-left > input {
+    width: 180px;
+    border: 1px solid #ddd;
+    padding: 0.375rem 0.75rem;
+    background: #f3f8fb;
+}
+
+button.apply-btn {
+  border: none;
+  outline: none;
+  padding: 4px 10px;
+  background-color: #f3f8fb;
+
+  border: 1px solid #ddd;
+}
+
+button.filter-btn {
+  border: none;
+  outline: none;
+  padding: 4px 10px;
+  background-color: #f3f8fb;
+  border: 1px solid #ddd;
+}
+
+
+/* Subscriber page */
+.all-subscribe-wrapper {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  align-items: center;
+}
+
+.all-subscriber h6 span {
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+}
+
+.all-active h6 span {
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+}
+
+.all-onhold h6 span {
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+}
+
+table.mytable thead tr th {
+  font-size: 15px;
+  color: #444;
+}
+
+.table-responsive {
+  overflow-x: scroll;
+  width: 100%
+}
+
+td.pendingPayment {
+    font-weight: 600;
+    color: red;
+}
+
+td.completePayment {
+    color: green;
+    font-weight: 600;
+}
+
+td.processingPayment {
+    color: blue;
+    font-weight: 600;
+}
+
+
+
+span.onhold {
+  background: sandybrown;
+  padding: 6px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+span.active-order {
+  background: green;
+  padding: 6px 10px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+table {
+  font-family: "Rubik", sans-serif;
+  border-collapse: collapse;
+}
+
+.subscriber-search input {
+  border: none;
+  outline: none;
+  padding: 0.375rem 0.75rem;
+  background-color: #f3f8fb;
+  border: 1px solid #ddd;
+  transition: .5s;
+}
+
+.subscriber-search button {
+  border: none;
+  outline: none;
+  padding: 0.375rem 0.75rem;
+  background-color: #f3f8fb;
+  border: 1px solid #ddd;
+  transition: .5s;
+}
+
+.subscriber-search button:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.subscriber-table::-webkit-scrollbar {
+  height: 10px;
+}
+
+.subscriber-table::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.subscriber-table::-webkit-scrollbar-thumb {
+  background: rgb(231, 226, 226);
+  border-radius: 10px;
+}
+
+.subscriber-table::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+
+
+/* User data page */
+.user-data {
+  margin: auto;
+  margin-top: 30px;
+}
+.user-data-setting{
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 7px;
+  /* position: absolute; */
+  top: 10px;
+  margin: auto;
+  /* width: 60%; */
+  /* border: 1px solid #ddd; */
+  /* left: 160px; */
+  font-size: 15px;
+}
+.user-data-setting.active{
+  display: block;
+}
+a.payment-data-active {
+  text-decoration: none;
+  color: green;
+  background: #fff;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 4px;
+}
+button.payment-data-btn {
+  border: none;
+  outline: none;
+  background: #fff;
+  font-weight: 500;
+  color: blue;
+  padding: 3px 13px;
+  border-radius: 4px;
+}
+
+
+
+.user-data-btn{
+  /* padding-top: 10px; */
+}
+
+.hide{
+  display: none;
+}
+.text-center.user-data-btn button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  background: #000000;
+  color: #fff;
+  border: 1px solid #444;
+}
+.user-data-btn button:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    transition: .5s;
+}
+
+/* Add user start */
+.service-bottom-edit {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #ddd;
+  padding: 30px 0;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.service-bottom-edit a {
+  display: inline-block;
+  font-size: 25px;
+  color: #444;
+}
+.service-bottom-edit span {
+  font-size: 23px;
+  padding: 2px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .5s;
+}
+.service-bottom-edit span:hover {
+    font-size: 25px;
+}
+input.timezone {
+  height: 38px;
+  border: 1px solid #d1c6c6;
+  outline: none;
+}
+a.activeAddUser {
+  background: green;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+a.cancleAddUser {
+  background: #081a69;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 19px;
+  border-radius: 5px;
+}
+form.row.g-3.adduserform > div {
+  margin-top: 35px;
+}
+.table-left a.add-user {
+  color: #fff;
+  background: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 5px;
+}
+/* Add user End */
+
+/* Service 1 css start */
+form.services1 label {
+  width: 250px;
+}
+form.services1 {
+  background: #fff;
+  padding: 40px;
+}
+form.services1 > div {
+  /* border-bottom: 1px solid #ddd; */
+  padding: 10px 0px;
+}
+div#textValue p {
+  word-spacing: 10px;
+}
+div#textValue p span {
+  color: red;
+  -webkit-text-stroke: medium;
+}
+.service1submit input {
+  border: none;
+  outline: none;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+span.add-value {
+  font-size: 17px;
+  margin-left: 10px;
+}
+
+span.addDataBtn {
+  font-size: 17px;
+  margin-left: 10px;
+}
+table.current-data-table tr td select {
+  border: 1px solid #ddd;
+  outline: none;
+  background: #f3f8fb;
+  padding: 5px 10px;
+}
+table.current-data-table tr td input{
+  border: 1px solid #ddd;
+  outline: none;
+  background: #f3f8fb;
+  padding: 5px 10px;
+}
+tr.data {
+  background: #f3f8fb;
+}
+
+tr.data input {
+  background: #fbfbfb;
+  border: 1px solid #ddd;
+  outline: none;
+  padding: 5px 10px;
+
+}
+/* Service 1 css End */
+
+/* Service 2 css End */
+form.services2 label {
+  width: 200px;
+}
+form.services2 div > select {
+  width: 120px;
+  height: 30px;
+  background-color: #f3f8fb;
+  border: 1px solid #ddd;
+  outline: none;
+}
+form.services2 div > input {
+  width: 243px;
+  height: 30px;
+  background-color: #f3f8fb;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+form.services2 {
+  padding: 10px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 20px;
+}
+.current-data {
+  /* margin-left: 15px; */
+  padding: 20px;
+  background: #fff;
+  border-radius: 7px;
+}
+.current-data table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+form.services2 > div {
+  padding: 10px 0px;
+}
+.subscriptions {
+  border: 1px solid #ddd;
+  width: 88%;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}
+.sub-status label {
+  margin-bottom: 10px;
+}
+
+
+.subscriptions h5 {
+  color: green;
+  font-weight: 600;
+}
+
+.subscriptions a {
+  text-decoration: none;
+  margin-right: 10px;
+  display: inline-block;
+}
+a.cancel-sub {
+    color: red;
+    font-weight: 500;
+}
+a.update-sub {
+  color: #023b1b;
+  font-weight: 500;
+}
+button.add-service-btn {
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid #444;
+  background: #000;
+  font-weight: 600;
+  color: #fff;
+  transition: .5s;
+}
+button.add-service-btn:hover {
+  background: #fff;
+  color: #000;
+  border: 2px solid #444;
+}
+/* Service 2 css End */
+
+
+
+
+.button {
+  width: 184px;
+  cursor: pointer;
+}
+.button a {
+  text-decoration: none;
+  color: rgb(255 255 255);
+  background: #444;
+  padding: 13px 0;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 30px;
+  position: relative;
+  padding-left: 17px;
+  transition: 0.5s;
+  border: 1px solid #444;
+}
+.button a::after {
+  content: "\F135";
+  font-family: "bootstrap-icons";
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid #444;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  transition: 0.5s;
+  font-size: 29px;
+  color: #444;
+}
+.button a:hover {
+  background: #fff;
+  border: 1px solid #444;
+  color: #444;
+}
+.button a:hover::after {
+  background: #444;
+  border: 1px solid #444;
+  color: rgb(255, 255, 255);
+}
+
